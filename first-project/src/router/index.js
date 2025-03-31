@@ -6,6 +6,7 @@ import ListBinding from '@/views/ListBinding.vue'
 import DataBinding from '@/views/DataBinding.vue'
 import IfBinding from '@/views/IfBinding.vue'
 
+
 const routes = [ //라우터 등록!=> 컴포넌트화 , 라우터 링크화 가능!!!!!
   {
     path: '/',  // 접속 경로
