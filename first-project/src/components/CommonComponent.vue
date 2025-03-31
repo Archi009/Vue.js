@@ -26,7 +26,7 @@
     methods : {  // Vue가 사용하는 모든 종류의 함수  : 값을 가지고 AJAX 통신을 진행할 수도 있음
 
     },
-    watch : {   // 데이터 변경에 따른 추가 작업 정의
+    watch : {   // 데이터 변경에 따른 추가 작업 정의 ; 루프에 빠질 수 있으니 주의!!
       month(){
         console.log('실행',this.month);
         if((this.month.toString()).length == 1 && this.month < 10){
@@ -37,6 +37,6 @@
   }
 
 </script>
- <style scoped>
+ <style scoped> /*scoped를 사용하면 이 컴포넌트에만 스타일이 적용된다*/
   /* Component가 가지는 Style */
 </style>
