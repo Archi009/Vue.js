@@ -32,16 +32,20 @@
       }
     },
     methods : {
+      //alt+ enter 를 눌렀을 때 data msg 값을 빈값으로 만든다.
       clear(){
         this.msg =''
       },
+      //이벤트 버블링 : 클릭시 돔을 따라 이벤트가 전파된다.
       mesg(str){
         alert(str)
       },
+      //클릭시 변수 대채식 함수로 실행 counter  변수를 1씩 증가 시킨다.
       increasCounter(event){
         console.log('increase',event);
         this.counter++
       },
+      // 클릭 함수 내부에서 value 값과 $event  대상을 받아서 카운터에다 value  값을 더한다( 여기산  num  값을 받아오는데 값이 6으로 지정 돼있기 때문에 6씩 증가)
       setCount(value, event){
         console.log('setCount',event);
         this.counter += value
