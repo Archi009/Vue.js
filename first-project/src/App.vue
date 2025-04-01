@@ -1,16 +1,20 @@
 <template>         <!--화면은 있지만 데이터가 없어 script구문이 필요 없었다.-->
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>|
-    <router-link to="/databinding">databinding</router-link>|
-    <router-link :to="{name : 'listBind'}">listbinding</router-link>| <!--<router-link v-bind:to="{name : 'listbinding'}">listbinding</router-link> 앞의 것과 같다 -->
-    <router-link :to="{name : 'ifBind'}">ifbinding</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/databinding">databinding</router-link> |
+    <router-link :to="{name : 'listBind'}">listbinding</router-link> | <!--<router-link v-bind:to="{name : 'listbinding'}">listbinding</router-link> 앞의 것과 같다 -->
+    <router-link :to="{name : 'ifBind'}">ifbinding</router-link> |
+    <router-link :to="{name : 'onEv'}">onEvent</router-link> |
+    <router-link :to="{name : 'comWa'}">ComputedWatch</router-link> |
+    <router-link :to="{name : 'test'}">test</router-link>
+
   </nav>
   <router-view/>  <!-- 호출한 라우터를 불러 오는 곳 -->
   <hr>
   <!-- <DataBinding/> -->
   <!-- <DataBinding/> -->
-   <test-binding/>
+   <!-- <test-binding/> -->
 </template>
 <script>
 // 컴포넌트 추가 1) 자식 컴포넌트로 등록

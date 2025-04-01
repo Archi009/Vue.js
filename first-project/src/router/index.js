@@ -5,6 +5,10 @@ import HomeView from '../views/HomeView.vue'
 import ListBinding from '@/views/ListBinding.vue'
 import DataBinding from '@/views/DataBinding.vue'
 import IfBinding from '@/views/IfBinding.vue'
+import OnEvent from '@/views/OnEvent.vue'
+import TestBinding from '@/views/TestBinding.vue'
+import CommonComponent from '@/components/CommonComponent.vue'
+import ComputedWatch from '@/views/ComputedWatch.vue'
 
 
 const routes = [ //라우터 등록!=> 컴포넌트화 , 라우터 링크화 가능!!!!!
@@ -35,7 +39,24 @@ const routes = [ //라우터 등록!=> 컴포넌트화 , 라우터 링크화 가
     path : '/ifBinding',
     name : 'ifBind',
     component : IfBinding
-  }  
+  },
+  {
+    path : '/onEvent',
+    name : 'onEv',
+    component : OnEvent
+  }, 
+  {
+    path : '/compWatch',
+    name : 'comWa',
+    component : ComputedWatch
+  },
+  {
+    path : '/practice',
+    name : 'test',
+    component : TestBinding
+  },
+ 
+
 ]
 
 const router = createRouter({  //vue router 를 생성하는 함수
